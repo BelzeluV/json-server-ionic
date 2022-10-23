@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    
+      <ion-title id="titulo">Inicio</ion-title>
+      <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    
+    
+  </ion-toolbar>
+</ion-header>
+
+<!-- <img id="fotoduoc" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt=""> -->
+<ion-content>
+
+
+    <ion-list>
+
+      <!--item1-->
+      <ion-item  [routerLink]="['/registrar']">
+          <img src="assets/img/brazitos60.png" slot="start" id="monito">
+        <ion-label>Registrar asistencias</ion-label>
+      </ion-item>
+
+
+      <!--item2-->
+      <ion-item [routerLink]="['/totalregistro']">
+          <img src="assets/img/libro48.png" slot="start"  id="hoja" alt="">
+          <ion-label>
+            Ver Asistencias totales
+          </ion-label>
+      </ion-item>
+
+      <!--prueba-->
+      
+      <!--final--->
+    </ion-list>
+
+
+
+
+    <ion-footer class="patas" collapse="fade">
+      <ion-toolbar>
+        <ion-title id="titulofooter">DuocUC 2022 ©</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+
+
+</ion-content>

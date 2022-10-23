@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personas",
+  "info": {
+    "singularName": "persona",
+    "pluralName": "personas",
+    "displayName": "Persona"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre1": {
+      "type": "string"
+    },
+    "nombre2": {
+      "type": "string"
+    },
+    "apellido1": {
+      "type": "string"
+    },
+    "apellido2": {
+      "type": "string"
+    },
+    "rut": {
+      "type": "string"
+    },
+    "Correo_electronico": {
+      "type": "string"
+    },
+    "Clave_de_seguridad": {
+      "type": "string"
+    }
+  }
+}

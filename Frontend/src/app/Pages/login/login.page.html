@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-card id="foto">
+          <br>
+          <ion-title id="titulopagina">
+            Iniciar Sesión
+          </ion-title>
+          <br>
+          <ion-item>
+            <ion-col>
+              <img src="https://mechon.cl/wp-content/uploads/2021/11/Alameda-768x432.jpg" id="foto">
+            </ion-col>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <form>
+      <ion-item>
+        <ion-col>
+          <label for="user">Correo electronico</label>
+          <ion-input #correo id="correo" placeholder="Ingrese su Correo electronico"></ion-input>
+        </ion-col>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-col>
+          <label for="password">Contraseña</label>
+          <ion-input #contra id="password" placeholder="ingrese su contraseña" type="password"></ion-input>
+        </ion-col>
+      </ion-item>
+    </form>
+
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="empresa3" class="button-block button-positive" (click)="Cambioregistrar()">Crear Cuenta
+        </ion-button>
+        <ion-button color="empresa1" class="button-block button-positive" (click)="CambioMenuprincipal(correo,contra)">
+          Iniciar Sesión</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-footer class="patas" collapse="fade">
+      <ion-toolbar>
+        <ion-title id="titulofooter">DuocUC 2022 ©</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-grid>
+</ion-content>

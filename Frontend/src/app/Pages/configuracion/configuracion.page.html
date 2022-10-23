@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="titulo">configuración</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Modo Oscuro (Proximamente...)</ion-label>
+      <ion-toggle slot="end" name="blueberry" checked color="empresa4"></ion-toggle>
+    </ion-item>
+    <ion-list>
+      <ion-item [routerLink]="['/crud']">
+        <div>
+          <ion-label>Ir a Opciones CRUD</ion-label>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>

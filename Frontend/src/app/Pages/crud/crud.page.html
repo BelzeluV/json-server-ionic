@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Administrador de personas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab horizontal="end" vertical="center" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let persona of personas" [routerLink]="['/detalles', persona.id]">
+      <ion-avatar>
+        <img src="{{persona.urlfoto}}" alt="">
+      </ion-avatar>
+      <div>
+        <ion-label>
+          &nbsp;&nbsp;{{persona.nombre1}} {{persona.nombre2}} {{persona.apellido1}} {{persona.apellido2}}
+        </ion-label>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-footer class="patas" collapse="fade">
+    <ion-toolbar>
+      <ion-title id="titulofooter">DuocUC 2022 ©</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

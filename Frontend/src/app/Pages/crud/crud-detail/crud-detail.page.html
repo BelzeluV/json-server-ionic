@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>crud-detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img alt="Foto no pillada, ¿LO PILLAS?" src="{{persona.urlfoto}}" id="foto"/>
+    <ion-card-header>
+      <ion-card-title>{{persona.nombre1}} {{persona.nombre2}} {{persona.apellido1}} {{persona.apellido2}}</ion-card-title>
+      <ion-card-subtitle>id de registro: ({{persona.id}})</ion-card-subtitle>
+      <ion-card-subtitle>      descripcion del usuario: {{persona.descripcion}}
+
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <br>
+      rut del usuario: {{persona.rut}}
+      <br>
+      Correo del usuario: {{persona.correo}}
+      <br>
+      Contraseña del usuario: {{persona.contrasena}}
+    </ion-card-content>
+  </ion-card>
+  <ion-grid *ngIf=" persona.id!=1 ">
+    <ion-col>
+      <ion-button (click)="BorrarUsuario()">
+        Borrar
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button>
+        Editar
+      </ion-button>
+    </ion-col>
+  </ion-grid>
+
+  <ion-footer class="patas" collapse="fade">
+    <ion-toolbar>
+      <ion-title id="titulofooter">DuocUC 2022 ©</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

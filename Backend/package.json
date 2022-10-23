@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch database.json"
+  },
+  "keywords": [],
+  "author": "Belzeluv",
+  "license": "ISC"
+}
